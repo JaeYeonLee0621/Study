@@ -104,6 +104,7 @@ visit.save()
     - 오직 에러가 발생할 때만 rollback이 된다
 - query를 이용하여 데이터가 변경될 때 웬만하면 Transaction을 이용하자
 
+<br/>
 
 ## Rest API
 
@@ -136,11 +137,15 @@ visit.save()
 2. 전송 성공 위조 하기
 3. 지역적으로 이용자 제한하기
 
+<br/>
+
 ## Django Core Module 교체 시 주의할 점
 
 - 장고 코어 부분을 내가 변경할 필요? `없다`
     - +) 심지어 인스타그램도 포브스에 그럴 필요가 없다고 말했다..
 - 그러니 FrankenDjango를 만들려고 하지 마로라..
+
+<br/>
 
 ## Django Admin
 
@@ -152,6 +157,8 @@ visit.save()
 - 다중사용자가 이용하는 경우 `list_eidtable (리스트 상에서 수정하는 기능)` 을 피하자
 - 이용하는 모든 admin 확장 시스템에 테스트 케이스를 작성하라
 
+<br/>
+
 ## Django User Model
 
 - `settings.AUTH_USER_MODEL` 을 사용하면 정의된 User Model을 가져올 수 있다
@@ -161,6 +168,8 @@ visit.save()
 - AbstractUser : 기존의 User를 유지하면서 필드 추가
 - AbstractBaseUser : 기존의 User를 유지하지 않고 새로 생성 > 매우 까다로움
 - `OneToOneField` 로 새로운 Table을 연결시키기
+
+<br/>
 
 ## Django Third Party Package
 
@@ -188,6 +197,8 @@ visit.save()
     - 특허에 대해 걱정한다면? Apache License
     - `LICENSE.rst` 파일을 생성
 5. 코드는 간결해야한다
+
+<br/>
 
 ## 테스트, 정말 거추장스럽고 낭비일까? (아니..)
 
@@ -217,6 +228,8 @@ visit.save()
 - 웹에 대한 셀레니움 테스트
 - Third Party API에 대한 실제 테스팅 등
 
+<br/>
+
 ## 문서화에 집착하자
 
 - reStructuredText (rst) 를 사용하자
@@ -228,6 +241,8 @@ visit.save()
 2. deployments.rst : 어떻게 프로젝트를 설치, 업데이트하는지에 대한 단계별 정리를 제공
 3. installation.rst : 프로젝트를 처음 접하는 사람들에게 유용
 4. architecture.rst : 프로젝트가 시간이 흐르면서 확장되어 감에 따라 각 요소가 어떻게 구성되어 있는지에 대한 이해를 돕는 가이드
+
+<br/>
 
 ## Django 성능 향상 시키기
 
@@ -255,6 +270,8 @@ visit.save()
 - 가장 많은 쿼리를 포함하는 뷰와 템플릿
 - 어떤 URL이 가장 많은 요청을 받는가
 - Cache를 삭제해야 할 시점은 언제인가
+
+<br/>
 
 ## 비동기 테스크 큐
 
@@ -304,6 +321,8 @@ visit.save()
     - 재시도 전 지연 시간 (다시 시도하기 전에 최대 10초를 기다리는 것을 선호한다)
     - 만약 반복적으로 오류가 난다면 재시도 할 때마다 시간을 늘이는 것을 추천한다
         - 이로 인해 우리도 실패 원인을 복구하는 시간을 얻는다
+
+<br/>
 
 ## Django 보안
 
@@ -355,6 +374,8 @@ CSRF_COOKIE_SECURE = True
 - 따라서 CDN을 이용하여 우회할 수 있다
 - CDN을 사용할 수 없는 경우 업로드된 파일들을 실행 불가능한 폴더 안으로 저장한다
 
+<br/>
+
 ## Signal
 
 - 시그널은 `최후의 수단`이다 (오호)
@@ -369,6 +390,8 @@ CSRF_COOKIE_SECURE = True
 
 - model의 save나 delete 메서드를 오버라이드
 - 헬퍼 함수 생성
+
+<br/>
 
 ## Utility
 
