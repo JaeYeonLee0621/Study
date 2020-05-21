@@ -17,5 +17,3 @@
 그러니 계속해서 그림을 그려야 겠다
 
 > 빈센트 반 고흐
-
-정리는 notion : https://www.notion.so/Python-63226c3c66424cbbbf26da1627c9d4fb
